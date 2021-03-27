@@ -17,11 +17,11 @@ export default {
   nav: [
     {
       text: "Docs",
-      link: "/introduction/index.html",
+      link: "introduction/index.html",
     },
     {
       text: "About",
-      link: "/about/index.html",
+      link: "about/index.html",
       align: "right",
     },
   ],
