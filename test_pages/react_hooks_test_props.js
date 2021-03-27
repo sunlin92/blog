@@ -1,5 +1,6 @@
 import projectConfig from '/site/pagic.config.js';
 import ReactHooksTest from './react_hooks_test_content.js';
+import Ga from '/site/_ga.js';
 import Gitalk from '/site/_gitalk.js';
 export default {
     'prev': {
@@ -31,6 +32,9 @@ export default {
                 'LICENSE',
                 'dist'
             ],
+            ga: {
+                id: 'G-63JET49G8Z'
+            },
             gitalk: {
                 admin: [
                     'sunlin92'
@@ -66,7 +70,8 @@ export default {
                 'out',
                 'sidebar',
                 'prev_next',
-                'gitalk'
+                'gitalk',
+                'ga'
             ],
             port: 8000,
             root: '/site/',
@@ -103,7 +108,8 @@ export default {
             },
             watch: false
         }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "test_pages/react_hooks_test.html", pagePath: "test_pages/react_hooks_test.tsx", script: null, title: "React hooks test" }),
-    'head': null,
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "G-63JET49G8Z" })),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
