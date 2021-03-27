@@ -2,7 +2,7 @@
 export default {
     srcDir: ".",
     exclude: ["LICENSE"],
-    root: ".",
+    root: "/site",
     theme: "docs",
     plugins: ["sidebar", "prev_next"],
     title: "Pagic template docs",
