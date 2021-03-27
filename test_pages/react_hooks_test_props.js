@@ -34,12 +34,12 @@ export default {
             include: undefined,
             nav: [
                 {
-                    link: '/introduction/index.html',
+                    link: 'introduction/index.html',
                     text: 'Docs'
                 },
                 {
                     align: 'right',
-                    link: '/about/index.html',
+                    link: 'about/index.html',
                     text: 'About'
                 }
             ],
