@@ -2,10 +2,7 @@ import projectConfig from '/site/pagic.config.js';
 import Ga from '/site/_ga.js';
 import Gitalk from '/site/_gitalk.js';
 export default {
-    'prev': {
-        "text": "Foo",
-        "link": "folder/foo.html"
-    },
+    'prev': undefined,
     'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "folder/bar.md",
@@ -43,6 +40,120 @@ export default {
             "pagePath": "introduction/README.md"
         },
         {
+            "text": "Starlette",
+            "children": [
+                {
+                    "text": "applications",
+                    "link": "starlette/applications.html",
+                    "pagePath": "starlette/applications.md"
+                },
+                {
+                    "text": "authentication",
+                    "link": "starlette/authentication.html",
+                    "pagePath": "starlette/authentication.md"
+                },
+                {
+                    "text": "background",
+                    "link": "starlette/background.html",
+                    "pagePath": "starlette/background.md"
+                },
+                {
+                    "text": "concurrency",
+                    "link": "starlette/concurrency.html",
+                    "pagePath": "starlette/concurrency.md"
+                },
+                {
+                    "text": "config",
+                    "link": "starlette/config.html",
+                    "pagePath": "starlette/config.md"
+                },
+                {
+                    "text": "convertors",
+                    "link": "starlette/convertors.html",
+                    "pagePath": "starlette/convertors.md"
+                },
+                {
+                    "text": "datastructures",
+                    "link": "starlette/datastructures.html",
+                    "pagePath": "starlette/datastructures.md"
+                },
+                {
+                    "text": "endpoints",
+                    "link": "starlette/endpoints.html",
+                    "pagePath": "starlette/endpoints.md"
+                },
+                {
+                    "text": "exceptions",
+                    "link": "starlette/exceptions.html",
+                    "pagePath": "starlette/exceptions.md"
+                },
+                {
+                    "text": "formparsers",
+                    "link": "starlette/formparsers.html",
+                    "pagePath": "starlette/formparsers.md"
+                },
+                {
+                    "text": "graphql",
+                    "link": "starlette/graphql.html",
+                    "pagePath": "starlette/graphql.md"
+                },
+                {
+                    "text": "middleware",
+                    "link": "starlette/middleware.md"
+                },
+                {
+                    "text": "requests",
+                    "link": "starlette/requests.html",
+                    "pagePath": "starlette/requests.md"
+                },
+                {
+                    "text": "responses",
+                    "link": "starlette/responses.html",
+                    "pagePath": "starlette/responses.md"
+                },
+                {
+                    "text": "routing",
+                    "link": "starlette/routing.html",
+                    "pagePath": "starlette/routing.md"
+                },
+                {
+                    "text": "schemas",
+                    "link": "starlette/schemas.html",
+                    "pagePath": "starlette/schemas.md"
+                },
+                {
+                    "text": "staticfiles",
+                    "link": "starlette/staticfiles.html",
+                    "pagePath": "starlette/staticfiles.md"
+                },
+                {
+                    "text": "status",
+                    "link": "starlette/status.html",
+                    "pagePath": "starlette/status.md"
+                },
+                {
+                    "text": "templating",
+                    "link": "starlette/templating.html",
+                    "pagePath": "starlette/templating.md"
+                },
+                {
+                    "text": "testclient",
+                    "link": "starlette/testclient.html",
+                    "pagePath": "starlette/testclient.md"
+                },
+                {
+                    "text": "types",
+                    "link": "starlette/types.html",
+                    "pagePath": "starlette/types.md"
+                },
+                {
+                    "text": "websockets",
+                    "link": "starlette/websockets.html",
+                    "pagePath": "starlette/websockets.md"
+                }
+            ]
+        },
+        {
             "link": "test_pages/index.html",
             "children": [
                 {
@@ -63,21 +174,6 @@ export default {
             ],
             "pagePath": "test_pages/README.md",
             "text": "Test pages"
-        },
-        {
-            "text": "Folder",
-            "children": [
-                {
-                    "text": "Foo",
-                    "link": "folder/foo.html",
-                    "pagePath": "folder/foo.md"
-                },
-                {
-                    "text": "Custom sidebar text",
-                    "link": "folder/bar.html",
-                    "pagePath": "folder/bar.md"
-                }
-            ]
         }
     ],
     'gitalk': React.createElement(Gitalk, { admin: [

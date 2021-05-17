@@ -2,15 +2,21 @@ import projectConfig from '/site/pagic.config.js';
 import Ga from '/site/_ga.js';
 import Gitalk from '/site/_gitalk.js';
 export default {
-    'prev': null,
-    'next': null,
+    'prev': {
+        "text": "staticfiles",
+        "link": "starlette/staticfiles.html"
+    },
+    'next': {
+        "text": "templating",
+        "link": "starlette/templating.html"
+    },
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "test_pages/front_matter.md",
+    'pagePath': "starlette/status.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "test_pages/front_matter_test.html",
-    'title': "Front matter test",
+    'outputPath': "starlette/status.html",
+    'title': undefined,
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>This is a front matter test page.</p>\n<h2 id="the-front-matter-content">The front matter content<a class="anchor" href="#the-front-matter-content">§</a></h2>\n<pre class="language-yml"><code class="language-yml"><span class="token key atrule">outputPath</span><span class="token punctuation">:</span> test_pages/front_matter_test.html\n<span class="token key atrule">title</span><span class="token punctuation">:</span> Front matter test\n<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n<span class="token key atrule">prev</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n<span class="token key atrule">next</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n</code></pre>'
+            __html: ''
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement(Ga, { id: "G-63JET49G8Z" }),
@@ -22,16 +28,16 @@ export default {
         React.createElement("script", { src: "/site/index.js", type: "module" })),
     'contentTitle': undefined,
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>This is a front matter test page.</p>\n<h2 id="the-front-matter-content">The front matter content<a class="anchor" href="#the-front-matter-content">§</a></h2>\n<pre class="language-yml"><code class="language-yml"><span class="token key atrule">outputPath</span><span class="token punctuation">:</span> test_pages/front_matter_test.html\n<span class="token key atrule">title</span><span class="token punctuation">:</span> Front matter test\n<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n<span class="token key atrule">prev</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n<span class="token key atrule">next</span><span class="token punctuation">:</span> <span class="token null important">null</span>\n</code></pre>'
+            __html: ''
         } }),
     'toc': null,
-    'author': "水月",
+    'author': "sunlin92",
     'contributors': [
-        "水月"
+        "sunlin92"
     ],
-    'date': "2021-03-27T05:10:31.000Z",
+    'date': "2021-05-17T09:20:54.000Z",
     'updated': null,
-    'excerpt': "This is a front matter test page. The front matter content outputPath: test_pages/front_matter_test.html title: Front matter test toc: null prev: null next: null ",
+    'excerpt': "",
     'cover': undefined,
     'sidebar': [
         {
@@ -178,5 +184,5 @@ export default {
     ],
     'gitalk': React.createElement(Gitalk, { admin: [
             'sunlin92'
-        ], clientID: "692a6b422e67b368cc70", clientSecret: "f80785fb814bc4a5d391b4dbbd02ae3dfbb6b853", id: "test_pages/front_matter_test.html", owner: "sunlin92", pagerDirection: "last", proxy: "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token", repo: "site", title: "Front matter test" })
+        ], clientID: "692a6b422e67b368cc70", clientSecret: "f80785fb814bc4a5d391b4dbbd02ae3dfbb6b853", id: "starlette/status.html", owner: "sunlin92", pagerDirection: "last", proxy: "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token", repo: "site", title: undefined })
 };

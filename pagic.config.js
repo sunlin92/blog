@@ -28,21 +28,105 @@ export default {
         "/": [
             "introduction/README.md",
             {
+                text: "Starlette",
+                children: [
+                    "starlette/index.md",
+                    {
+                        text: "applications",
+                        link: "starlette/applications.md",
+                    },
+                    {
+                        text: "authentication",
+                        link: "starlette/authentication.md",
+                    },
+                    {
+                        text: "background",
+                        link: "starlette/background.md",
+                    },
+                    {
+                        text: "concurrency",
+                        link: "starlette/concurrency.md",
+                    },
+                    {
+                        text: "config",
+                        link: "starlette/config.md",
+                    },
+                    {
+                        text: "convertors",
+                        link: "starlette/convertors.md",
+                    },
+                    {
+                        text: "datastructures",
+                        link: "starlette/datastructures.md",
+                    },
+                    {
+                        text: "endpoints",
+                        link: "starlette/endpoints.md",
+                    },
+                    {
+                        text: "exceptions",
+                        link: "starlette/exceptions.md",
+                    },
+                    {
+                        text: "formparsers",
+                        link: "starlette/formparsers.md",
+                    },
+                    {
+                        text: "graphql",
+                        link: "starlette/graphql.md",
+                    },
+                    {
+                        text: "middleware",
+                        link: "starlette/middleware.md",
+                    },
+                    {
+                        text: "requests",
+                        link: "starlette/requests.md",
+                    },
+                    {
+                        text: "responses",
+                        link: "starlette/responses.md",
+                    },
+                    {
+                        text: "routing",
+                        link: "starlette/routing.md",
+                    },
+                    {
+                        text: "schemas",
+                        link: "starlette/schemas.md",
+                    },
+                    {
+                        text: "staticfiles",
+                        link: "starlette/staticfiles.md",
+                    },
+                    {
+                        text: "status",
+                        link: "starlette/status.md",
+                    },
+                    {
+                        text: "templating",
+                        link: "starlette/templating.md",
+                    },
+                    {
+                        text: "testclient",
+                        link: "starlette/testclient.md",
+                    },
+                    {
+                        text: "types",
+                        link: "starlette/types.md",
+                    },
+                    {
+                        text: "websockets",
+                        link: "starlette/websockets.md",
+                    },
+                ],
+            },
+            {
                 link: "test_pages/README.md",
                 children: [
                     "test_pages/markdown_test.md",
                     "test_pages/front_matter.md",
                     "test_pages/react_hooks_test.tsx",
-                ],
-            },
-            {
-                text: "Folder",
-                children: [
-                    "folder/foo.md",
-                    {
-                        text: "Custom sidebar text",
-                        link: "folder/bar.md",
-                    },
                 ],
             },
         ],

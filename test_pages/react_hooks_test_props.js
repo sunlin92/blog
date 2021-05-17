@@ -7,10 +7,7 @@ export default {
         "text": "Front matter test",
         "link": "test_pages/front_matter_test.html"
     },
-    'next': {
-        "text": "Foo",
-        "link": "folder/foo.html"
-    },
+    'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "test_pages/react_hooks_test.tsx",
     'layoutPath': "_layout.tsx",
@@ -81,21 +78,105 @@ export default {
                     'introduction/README.md',
                     {
                         children: [
+                            'starlette/index.md',
+                            {
+                                link: 'starlette/applications.md',
+                                text: 'applications'
+                            },
+                            {
+                                link: 'starlette/authentication.md',
+                                text: 'authentication'
+                            },
+                            {
+                                link: 'starlette/background.md',
+                                text: 'background'
+                            },
+                            {
+                                link: 'starlette/concurrency.md',
+                                text: 'concurrency'
+                            },
+                            {
+                                link: 'starlette/config.md',
+                                text: 'config'
+                            },
+                            {
+                                link: 'starlette/convertors.md',
+                                text: 'convertors'
+                            },
+                            {
+                                link: 'starlette/datastructures.md',
+                                text: 'datastructures'
+                            },
+                            {
+                                link: 'starlette/endpoints.md',
+                                text: 'endpoints'
+                            },
+                            {
+                                link: 'starlette/exceptions.md',
+                                text: 'exceptions'
+                            },
+                            {
+                                link: 'starlette/formparsers.md',
+                                text: 'formparsers'
+                            },
+                            {
+                                link: 'starlette/graphql.md',
+                                text: 'graphql'
+                            },
+                            {
+                                link: 'starlette/middleware.md',
+                                text: 'middleware'
+                            },
+                            {
+                                link: 'starlette/requests.md',
+                                text: 'requests'
+                            },
+                            {
+                                link: 'starlette/responses.md',
+                                text: 'responses'
+                            },
+                            {
+                                link: 'starlette/routing.md',
+                                text: 'routing'
+                            },
+                            {
+                                link: 'starlette/schemas.md',
+                                text: 'schemas'
+                            },
+                            {
+                                link: 'starlette/staticfiles.md',
+                                text: 'staticfiles'
+                            },
+                            {
+                                link: 'starlette/status.md',
+                                text: 'status'
+                            },
+                            {
+                                link: 'starlette/templating.md',
+                                text: 'templating'
+                            },
+                            {
+                                link: 'starlette/testclient.md',
+                                text: 'testclient'
+                            },
+                            {
+                                link: 'starlette/types.md',
+                                text: 'types'
+                            },
+                            {
+                                link: 'starlette/websockets.md',
+                                text: 'websockets'
+                            }
+                        ],
+                        text: 'Starlette'
+                    },
+                    {
+                        children: [
                             'test_pages/markdown_test.md',
                             'test_pages/front_matter.md',
                             'test_pages/react_hooks_test.tsx'
                         ],
                         link: 'test_pages/README.md'
-                    },
-                    {
-                        children: [
-                            'folder/foo.md',
-                            {
-                                link: 'folder/bar.md',
-                                text: 'Custom sidebar text'
-                            }
-                        ],
-                        text: 'Folder'
                     }
                 ]
             },
@@ -121,6 +202,120 @@ export default {
             "pagePath": "introduction/README.md"
         },
         {
+            "text": "Starlette",
+            "children": [
+                {
+                    "text": "applications",
+                    "link": "starlette/applications.html",
+                    "pagePath": "starlette/applications.md"
+                },
+                {
+                    "text": "authentication",
+                    "link": "starlette/authentication.html",
+                    "pagePath": "starlette/authentication.md"
+                },
+                {
+                    "text": "background",
+                    "link": "starlette/background.html",
+                    "pagePath": "starlette/background.md"
+                },
+                {
+                    "text": "concurrency",
+                    "link": "starlette/concurrency.html",
+                    "pagePath": "starlette/concurrency.md"
+                },
+                {
+                    "text": "config",
+                    "link": "starlette/config.html",
+                    "pagePath": "starlette/config.md"
+                },
+                {
+                    "text": "convertors",
+                    "link": "starlette/convertors.html",
+                    "pagePath": "starlette/convertors.md"
+                },
+                {
+                    "text": "datastructures",
+                    "link": "starlette/datastructures.html",
+                    "pagePath": "starlette/datastructures.md"
+                },
+                {
+                    "text": "endpoints",
+                    "link": "starlette/endpoints.html",
+                    "pagePath": "starlette/endpoints.md"
+                },
+                {
+                    "text": "exceptions",
+                    "link": "starlette/exceptions.html",
+                    "pagePath": "starlette/exceptions.md"
+                },
+                {
+                    "text": "formparsers",
+                    "link": "starlette/formparsers.html",
+                    "pagePath": "starlette/formparsers.md"
+                },
+                {
+                    "text": "graphql",
+                    "link": "starlette/graphql.html",
+                    "pagePath": "starlette/graphql.md"
+                },
+                {
+                    "text": "middleware",
+                    "link": "starlette/middleware.md"
+                },
+                {
+                    "text": "requests",
+                    "link": "starlette/requests.html",
+                    "pagePath": "starlette/requests.md"
+                },
+                {
+                    "text": "responses",
+                    "link": "starlette/responses.html",
+                    "pagePath": "starlette/responses.md"
+                },
+                {
+                    "text": "routing",
+                    "link": "starlette/routing.html",
+                    "pagePath": "starlette/routing.md"
+                },
+                {
+                    "text": "schemas",
+                    "link": "starlette/schemas.html",
+                    "pagePath": "starlette/schemas.md"
+                },
+                {
+                    "text": "staticfiles",
+                    "link": "starlette/staticfiles.html",
+                    "pagePath": "starlette/staticfiles.md"
+                },
+                {
+                    "text": "status",
+                    "link": "starlette/status.html",
+                    "pagePath": "starlette/status.md"
+                },
+                {
+                    "text": "templating",
+                    "link": "starlette/templating.html",
+                    "pagePath": "starlette/templating.md"
+                },
+                {
+                    "text": "testclient",
+                    "link": "starlette/testclient.html",
+                    "pagePath": "starlette/testclient.md"
+                },
+                {
+                    "text": "types",
+                    "link": "starlette/types.html",
+                    "pagePath": "starlette/types.md"
+                },
+                {
+                    "text": "websockets",
+                    "link": "starlette/websockets.html",
+                    "pagePath": "starlette/websockets.md"
+                }
+            ]
+        },
+        {
             "link": "test_pages/index.html",
             "children": [
                 {
@@ -141,21 +336,6 @@ export default {
             ],
             "pagePath": "test_pages/README.md",
             "text": "Test pages"
-        },
-        {
-            "text": "Folder",
-            "children": [
-                {
-                    "text": "Foo",
-                    "link": "folder/foo.html",
-                    "pagePath": "folder/foo.md"
-                },
-                {
-                    "text": "Custom sidebar text",
-                    "link": "folder/bar.html",
-                    "pagePath": "folder/bar.md"
-                }
-            ]
         }
     ],
     'gitalk': React.createElement(Gitalk, { admin: [
